@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug</title>
+</head>
+<body>
+  <div id="myDiv">
+    This is some text.
+  </div>
+
+  <script>
+    // Incorrect way to select element by ID
+    let element = document.getElementById('myDiv');
+    element.innerHTML = '<b>This is bold text.</b>';
+    element.style.color = "blue";
+    //Missing a semi-colon
+    console.log("Correcting the color");
+  </script>
+</body>
+</html>
